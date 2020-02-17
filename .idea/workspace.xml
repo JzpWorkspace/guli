@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14e2c5c6-55c0-4232-a484-f66bc8231f61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/guli.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-edu/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-edu/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/api/ApiTeacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/META-INF/common-util.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/TestGit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-edu/target/classes/META-INF/service-edu.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/TeacherController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -38,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/ServiceEduApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -51,11 +46,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/TeacherController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="699">
+              <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/resources/logback-spring.xml">
+        <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/entity/Teacher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-53">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/entity/vo/TeacherQueryVo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -74,6 +87,7 @@
         <option value="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/ServiceEduApplication.java" />
         <option value="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/guli/common/base/result/R.java" />
         <option value="$PROJECT_DIR$/service/service-edu/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/TeacherController.java" />
       </list>
     </option>
   </component>
@@ -99,8 +113,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="10" />
+    <option name="x" value="127" />
+    <option name="y" value="11" />
     <option name="width" value="1750" />
     <option name="height" value="1000" />
   </component>
@@ -119,105 +133,6 @@
               <item name="guli" type="b2602c69:ProjectViewProjectNode" />
               <item name="guli" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guli" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service-edu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -225,13 +140,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\idea\zaixianjiaoyu\java\guli\service\service-edu\src\main\java\com\atguigu\guli\service\edu\controller\api" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,15 +197,23 @@
       <workItem from="1581903995708" duration="736000" />
       <workItem from="1581904855195" duration="273000" />
       <workItem from="1581905149637" duration="595000" />
-      <workItem from="1581905779657" duration="794000" />
+      <workItem from="1581905779657" duration="10219000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;添加彩色日志&quot;">
+      <created>1581906647060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581906647060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3881000" />
+    <option name="totallyTimeSpent" value="13306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="8" width="1400" height="800" extended-state="0" />
+    <frame x="102" y="9" width="1400" height="800" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -293,7 +225,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46407187" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13323353" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,6 +253,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;添加彩色日志&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;添加彩色日志&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/common/pom.xml">
@@ -373,13 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -395,6 +324,41 @@
             <element signature="e#367#368#0" expanded="true" />
             <element signature="e#439#440#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/api/ApiTeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/entity/vo/TeacherQueryVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/entity/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service-edu/src/main/java/com/atguigu/guli/service/edu/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
         </state>
       </provider>
     </entry>
