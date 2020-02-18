@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -32,11 +33,29 @@ public class TeacherController {
     @Autowired
     private TeacherService teacherService;
 
+    @ApiOperation(value = "根据左姓名查询讲师",notes = "根据左姓名查询讲师")
+    @GetMapping("list/name/{key}")
+    public R selectListNameByKey(
+            @ApiParam(name = "key",value = "左姓名查询",required = true)
+            @PathVariable String key){
+        List<Map<String, Object>> nameList = this.teacherService.selectTeacherByLikeKey(key);
+        return R.ok().data("nameList",nameList);
+    }
+
     @ApiOperation(value = "所有讲师的列表")
     @GetMapping("list")
     public R teacherList() {
         List<Teacher> list = teacherService.list(null);
         return R.ok().data("items",list).message("获取讲师列表成功！");
+    }
+
+    @ApiOperation(value = "根据id批量删除讲师",notes = "根据ID批量删除讲师，逻辑删除并非物理删除！")
+    @DeleteMapping("removeBath")
+    public R deleteTeacherById(
+            @ApiParam(name = "idList",value = "讲师ID列表",required = true)
+            @RequestBody List<String> idList) {
+        teacherService.removeByIds(idList);
+        return R.ok().message("讲师批量删除成功！");
     }
 
     @ApiOperation(value = "根据id删除讲师",notes = "根据ID删除讲师，逻辑删除并非物理删除！")
