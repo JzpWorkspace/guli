@@ -23,12 +23,12 @@ public class FileServiceImpl implements FileService {
         String endPoint = ossProperties.getEndPoint();
         String keyid = ossProperties.getKeyid();
         String keysecret = ossProperties.getKeysecret();
-        String bucketname = ossProperties.getBucketname();
+        String bucketName = ossProperties.getBucketname();
         //创建客户端
         OSS ossClient = new OSSClientBuilder().build(endPoint,keyid,keysecret);
 
         //上传文件的名称
-        String putFileName = UUID.randomUUID().toString()+fileName;
+        String putFileName = UUID.randomUUID().toString().replace("-","");
         String fileExtention = fileName.substring(fileName.lastIndexOf("."));
 
         //上传文件方式
@@ -42,17 +42,41 @@ public class FileServiceImpl implements FileService {
                 .append(dateFolder)
                 .append("/")
                 .append(putFileName)
+                .append(fileExtention)
                 .toString();
-        ossClient.putObject(bucketname,objectName,inputStream);
+        ossClient.putObject(bucketName,objectName,inputStream);
         //关闭
         ossClient.shutdown();
         //图片的url
         return new StringBuffer().append("https://")
-                .append(bucketname)
+                .append(bucketName)
                 .append(".")
                 .append(endPoint)
                 .append("/")
                 .append(objectName)
                 .toString();
+    }
+
+    @Override
+    public void removeFile(String url) {
+        //获取配置文件
+        String endpoint = ossProperties.getEndPoint();
+        String keyid = ossProperties.getKeyid();
+        String keysecret = ossProperties.getKeysecret();
+        String bucketName = ossProperties.getBucketname();
+        //创建客户端
+        OSS ossClient = new OSSClientBuilder().build(endpoint,keyid,keysecret);
+
+        //删除文件地址
+        //https://inline-teach-file.oss-cn-beijing.aliyuncs.com/avatar/2020/02/19/a79c541c-b688-4797-b9da-0ba4e5c00604default1%20%282%29.jpg
+        String host = "https://" + bucketName + "." + endpoint + "/";
+        String objectName = url.substring(host.length());
+        System.out.println(objectName);
+
+        //执行删除
+        ossClient.deleteObject(bucketName,objectName);
+
+        //关闭客户端
+        ossClient.shutdown();
     }
 }
