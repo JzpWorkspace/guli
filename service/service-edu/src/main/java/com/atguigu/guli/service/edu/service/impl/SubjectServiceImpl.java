@@ -103,7 +103,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         for (Subject subject : subjectList) {
             if (subject.getParentId().equals("0")) {
                 subjectLevelOneList.add(subject);
-            }else {
+            } else {
                 subjectLevelTwoList.add(subject);
             }
         }
@@ -118,7 +118,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
 
             List<SubjectVo> subjectVoLevelTwoList = new ArrayList<>();
             for (Subject subjectLevelTwo : subjectLevelTwoList) {
-                if(subjectLevelOne.getId().equals(subjectLevelTwo.getParentId())){
+                if (subjectLevelOne.getId().equals(subjectLevelTwo.getParentId())) {
 
                     //创建二级类别vo对象
                     SubjectVo subjectVoLevelTwo = new SubjectVo();
@@ -130,6 +130,11 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         }
 
         return subjectVoList;
+    }
+
+    @Override
+    public List<SubjectVo> nestedList2() {
+        return baseMapper.selectNestedListByParentId("0");
     }
 
     /**

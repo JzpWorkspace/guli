@@ -1,6 +1,7 @@
 package com.atguigu.guli.service.edu.entity;
 
 import java.math.BigDecimal;
+
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.atguigu.guli.service.base.model.BaseEntity;
@@ -24,10 +25,13 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("edu_course")
-@ApiModel(value="Course对象", description="课程")
+@ApiModel(value = "Course对象", description = "课程")
 public class Course extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
+
+    public static final String COURSE_DRAFT = "Draft";
+    public static final String COURSE_NORMAL = "Normal";
 
     @ApiModelProperty(value = "课程讲师ID")
     private String teacherId;

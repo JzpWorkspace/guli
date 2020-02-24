@@ -21,4 +21,5 @@ public interface SubjectService extends IService<Subject> {
 
     List<SubjectVo> nestedList();
 
+    List<SubjectVo> nestedList2();
 }

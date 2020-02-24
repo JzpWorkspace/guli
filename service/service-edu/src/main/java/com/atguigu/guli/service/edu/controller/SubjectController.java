@@ -43,7 +43,13 @@ public class SubjectController {
         List<SubjectVo> subjectVoList = subjectService.nestedList();
         return R.ok().data("items", subjectVoList);
     }
+    @ApiOperation(value = "嵌套数据列表")
+    @GetMapping("nested-list2")
+    public R nestedList2(){
 
+        List<SubjectVo> subjectVo2List = subjectService.nestedList2();
+        return R.ok().data("items", subjectVo2List);
+    }
     @ApiOperation(value = "Excel导入课程类别信息")
     @PostMapping("import")
     public R batchImport(
