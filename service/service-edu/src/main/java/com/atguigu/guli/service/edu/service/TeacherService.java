@@ -22,4 +22,12 @@ public interface TeacherService extends IService<Teacher> {
 
     List<Map<String, Object>> selectTeacherByLikeKey(String key);
 
+    public Map<String, Object> webSelectPage(Page<Teacher> pageParam);
+    /**
+     * 根据讲师id获取讲师详情页数据
+     * @param id
+     * @return
+     */
+    Map<String, Object> selectTeacherInfoById(String id);
+
 }

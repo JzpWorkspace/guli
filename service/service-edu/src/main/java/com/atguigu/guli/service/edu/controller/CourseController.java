@@ -3,8 +3,11 @@ package com.atguigu.guli.service.edu.controller;
 import com.atguigu.guli.common.base.result.R;
 import com.atguigu.guli.service.edu.entity.Course;
 import com.atguigu.guli.service.edu.entity.form.CourseInfoForm;
+import com.atguigu.guli.service.edu.entity.vo.ChapterVo;
 import com.atguigu.guli.service.edu.entity.vo.CoursePublishVo;
 import com.atguigu.guli.service.edu.entity.vo.CourseQueryVo;
+import com.atguigu.guli.service.edu.entity.vo.WebCourseVo;
+import com.atguigu.guli.service.edu.service.ChapterService;
 import com.atguigu.guli.service.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -23,6 +26,9 @@ import java.util.List;
 public class CourseController {
     @Autowired
     private CourseService courseService;
+
+    @Autowired
+    private ChapterService chapterService;
 
     @ApiOperation(value = "新增课程")
     @PostMapping("save-course-info")
@@ -101,5 +107,20 @@ public class CourseController {
 
         courseService.publishCourseById(id);
         return R.ok();
+    }
+
+    @ApiOperation(value = "根据CourseID查询课程")
+    @GetMapping(value = "get/{courseId}")
+    public R getByCourseId(
+            @ApiParam(name = "courseId", value = "课程ID", required = true)
+            @PathVariable String courseId){
+
+        //查询课程信息和讲师信息
+        WebCourseVo webCourseVo = courseService.selectWebCourseVoById(courseId);
+
+        //查询当前课程的章节信息
+        List<ChapterVo> chapterVoList = chapterService.nestedList(courseId);
+
+        return R.ok().data("course", webCourseVo).data("chapterVoList", chapterVoList);
     }
 }
